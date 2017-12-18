@@ -1,0 +1,67 @@
+//
+//  TableViewCell.m
+//  demoProject
+//
+//  Created by xie on 2017/12/15.
+//  Copyright © 2017年 abadou. All rights reserved.
+//
+#import <Masonry.h>
+#import "TableViewCell.h"
+@interface TableViewCell()
+
+
+
+@end
+@implementation TableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
+        self.view1 = [[UIView alloc]init];
+        
+        [self addSubview:self.view1];
+        
+        [self.view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self);
+            make.left.right.mas_equalTo(self);
+            make.height.mas_equalTo(50);
+        }];
+        self.view1.backgroundColor = [UIColor redColor];
+        self.bottomBtn = [[UIButton alloc]init];
+        
+        [self addSubview:self.bottomBtn];
+        
+        [self.bottomBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(self);
+            make.right.mas_equalTo(self);
+            
+            make.width.mas_equalTo(40);
+            make.height.mas_equalTo(30);
+        }];
+        
+        
+        [self.bottomBtn setTitle:@"1212" forState:UIControlStateNormal];
+        
+        [self.bottomBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [self.bottomBtn addTarget:self action:@selector(bottomBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return self;
+    
+}
+
+-(void)bottomBtnClick:(UIButton *)sender{
+    self.btnBlock(sender);
+    
+    
+}
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+//    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end
