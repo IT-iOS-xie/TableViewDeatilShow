@@ -18,14 +18,16 @@
 
 @implementation ViewController
 
-- (void)viewDidUnload {
-//    [_selectedIndexes release];
-    _selectedIndexes = nil;
-    
-    [super viewDidUnload];
-}
+//- (void)viewDidUnload {
+////    [_selectedIndexes release];
+//    _selectedIndexes = nil;
+//
+//    [super viewDidUnload];
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"展开列表详情";
     _selectedIndexes = [[NSMutableDictionary alloc] init];
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
      _selectArr = [NSMutableArray arrayWithCapacity:10 ];

@@ -17,6 +17,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
 }
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -30,7 +31,7 @@
             make.left.right.mas_equalTo(self);
             make.height.mas_equalTo(50);
         }];
-        self.view1.backgroundColor = [UIColor redColor];
+        self.view1.backgroundColor = [UIColor grayColor];
         self.bottomBtn = [[UIButton alloc]init];
         
         [self addSubview:self.bottomBtn];
@@ -39,12 +40,12 @@
             make.bottom.mas_equalTo(self);
             make.right.mas_equalTo(self);
             
-            make.width.mas_equalTo(40);
-            make.height.mas_equalTo(30);
+            make.width.mas_equalTo(100);
+            make.height.mas_equalTo(40);
         }];
         
         
-        [self.bottomBtn setTitle:@"1212" forState:UIControlStateNormal];
+        [self.bottomBtn setTitle:@"用户留言" forState:UIControlStateNormal];
         
         [self.bottomBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
         [self.bottomBtn addTarget:self action:@selector(bottomBtnClick:) forControlEvents:UIControlEventTouchUpInside];

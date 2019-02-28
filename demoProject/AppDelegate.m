@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Bugtags/Bugtags.h>
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    BugtagsOptions *options = [[BugtagsOptions alloc] init];
+//    options.trackingUserSteps = YES; // 具体可设置的属性请查看 Bugtags.h
+//    [Bugtags startWithAppKey:@"3b521cb3f96db9558883937633e70093" invocationEvent:BTGInvocationEventBubble options:options];  // Override point for customization after application launch.
     return YES;
 }
 
