@@ -1,7 +1,7 @@
 //
 //  AppDelegate.h
 //  demoProject
-//  测试
+//  
 //  Created by xie on 2017/12/15.
 //  Copyright © 2017年 abadou. All rights reserved.
 //
