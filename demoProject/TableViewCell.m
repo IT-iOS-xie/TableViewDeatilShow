@@ -15,7 +15,7 @@
 @implementation TableViewCell
 
 - (void)awakeFromNib {
-    [super awakeFromNib];
+    [super awakeFromNib];//434343434343434
     // Initialization code442342424242424
     
 }
