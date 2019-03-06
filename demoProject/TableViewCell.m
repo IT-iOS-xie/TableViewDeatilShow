@@ -15,13 +15,11 @@
 @implementation TableViewCell
 
 - (void)awakeFromNib {
-<<<<<<< HEAD
-    [super awakeFromNib];
-    // Initialization codererere
-=======
+
+
     [super awakeFromNib];//434343434343434
     // Initialization code442342424242424
->>>>>>> 2019.3.6
+
     
 }
 
