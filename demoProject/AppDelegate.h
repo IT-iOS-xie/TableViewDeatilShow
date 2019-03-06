@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+//2019.2 修改
 @property (strong, nonatomic) UIWindow *window;
 
 
